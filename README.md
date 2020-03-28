@@ -1,6 +1,6 @@
 # combine local and remote ads.txt files, only if updated.
 
-# Keep it Simple ads.txt combiner by CA3LE / TestMy.net 2020
+# Keep it Simple ads.txt combiner by Damon @ TestMy.net 2020
 
 # This script will check freestar's ads.txt, compare the date to your local ads.txt and update only if needed.
 # It will also combine your site's default ads.txt with freestar's.  
