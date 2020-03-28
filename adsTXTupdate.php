@@ -8,7 +8,7 @@
 
 $pathToRoot = './'; // should have ads.txt and ads-publisher.txt | include trailing slash | default: same directory as script ./ | e.g. (if script is two directories from root) ../../
 $sourceAdsTxt = "https://a.pub.network/core/ads.txt"; // freestar's frequently updated ads.txt
-// ads-publisher.txt $sourceAdsTxt get combined into the final output
+// ads-publisher.txt and $sourceAdsTxt get combined into the final output
 
 function curlFetch($src){
 	$handle = curl_init();
