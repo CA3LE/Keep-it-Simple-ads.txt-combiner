@@ -36,7 +36,7 @@ if($dateRemote[0] <= $dateLocal[0] && $dateLocal[0]){ // compare dates to contin
 	echo " -- Date match, I'm done for now --  ";
 	echo $pathToRoot."ads.txt is already up-to-date.";
 }else{
-	echo " -- Date mis-match, Let's update...  ";
+	echo " -- Date mis-match, Let's update --  ";
 	if (strpos($saveVar, '# PUBLISHER SPECIFIC ADS.TXT INFO BELOW THIS LINE') !== false) { // only continue if complete $sourceAdsTxt is loaded in $saveVar
 		$adsTXT = fopen($pathToRoot.'ads.txt','w'); // open local ads.txt for writing
 		$adsPublisherTXT = file_get_contents($pathToRoot.'ads-publisher.txt', true); // put local ads-publisher.txt into variable
