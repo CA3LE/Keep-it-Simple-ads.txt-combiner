@@ -20,18 +20,14 @@ function curlFetch($src){
 }
 
 $saveVar = curlFetch($sourceAdsTxt); // get ads.txt from freestar and put information into variable
-
-
 $pattern = "/\d{2}\-\d{2}\-\d{2}/"; // pattern for date search | formatted e.g. 03-28-20
-
 $adsTXTfc = file_get_contents($pathToRoot.'ads.txt', true); // put current local ads.txt into variable
 
 if (preg_match($pattern, $saveVar, $dateRemote) && preg_match($pattern, $adsTXTfc, $dateLocal)) { // find the dates in strings
-	echo "Dates found | remote: {$dateRemote[0]} & local: {$dateLocal[0]} ";
+	echo "Dates found | remote: {$dateRemote[0]} & local: {$dateLocal[0]}";
 }else{
 	echo "Dates not found";
 }
-
 if($dateRemote[0] == $dateLocal[0]){ // compare dates to continue
 	echo " -- Date match, I'm done for now --  ";
 	echo $pathToRoot."ads.txt is already up-to-date.";
@@ -49,8 +45,5 @@ if($dateRemote[0] == $dateLocal[0]){ // compare dates to continue
 		echo"error / not saved";
 	}
 }
-
 // Make cronjob to execute every 10 minutes.  
-
-
 ?>
