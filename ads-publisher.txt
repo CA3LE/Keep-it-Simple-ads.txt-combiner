@@ -1,0 +1,1 @@
+# insert ads.txt entries you'd like added to the end of freestar's default ads.txt below
