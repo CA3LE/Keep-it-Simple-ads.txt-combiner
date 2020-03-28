@@ -32,7 +32,7 @@ if (preg_match($pattern, $saveVar, $dateRemote) && preg_match($pattern, $adsTXTf
 	echo "dates not found";
 }
 
-if($dateRemote[0] == $dateLocal[0] && $dateLocal[0]){ // compare dates to continue // also continue if !$dateLocal[0]
+if($dateRemote[0] == $dateLocal[0]){ // compare dates to continue
 	echo " -- Date match, I'm done for now --  ";
 	echo $pathToRoot."ads.txt is already up-to-date.";
 }else{
