@@ -1,4 +1,3 @@
-# adsTXTupdate
 # combine local and remote ads.txt files, only if updated.
 
 # Keep it Simple ads.txt combiner by Damon @ TestMy.net 2020
