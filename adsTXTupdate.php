@@ -1,4 +1,4 @@
-<?
+<?php
 
 # Keep it Simple ads.txt combiner by Damon @ TestMy.net 2020
 
