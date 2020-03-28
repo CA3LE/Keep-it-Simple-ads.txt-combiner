@@ -27,7 +27,7 @@ $pattern = "/\d{2}\-\d{2}\-\d{2}/"; // pattern for date search | formatted e.g. 
 $adsTXTfc = file_get_contents($pathToRoot.'ads.txt', true); // put current local ads.txt into variable
 
 if (preg_match($pattern, $saveVar, $dateRemote) && preg_match($pattern, $adsTXTfc, $dateLocal)) { // find the dates in strings
-   echo "Found dates | remote: {$dateRemote[0]} & local: {$dateLocal[0]} ";
+	echo "Found dates | remote: {$dateRemote[0]} & local: {$dateLocal[0]} ";
 }else{
 	echo "dates not found";
 }
